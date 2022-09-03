@@ -1248,14 +1248,11 @@
                 },
                 {
                   "key": "textColor"
-                },
-                {
-                  "key": "text"
                 }
               ],
               "shouldTruncate": false,
               "truncateButtonColor": "#FFC13D",
-              "text": "STAFF PORTAL {{v0.1}}",
+              "text": "STAFF PORTAL",
               "key": "zabk4wabds",
               "isDeprecated": false,
               "rightColumn": 31,

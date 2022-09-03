@@ -2186,6 +2186,12 @@
                         },
                         {
                           "key": "primaryColumns.mainPhone.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.supplierUrl.displayText"
+                        },
+                        {
+                          "key": "primaryColumns.email.displayText"
                         }
                       ],
                       "leftColumn": 1,
@@ -2244,7 +2250,12 @@
                       "columnWidthMap": {
                         "task": 245,
                         "step": 62,
-                        "status": 75
+                        "status": 75,
+                        "supplierUrl": 205,
+                        "email": 185,
+                        "warrantyEmail": 217,
+                        "accountsEmail": 233,
+                        "salesRep": 157
                       },
                       "parentRowSpace": 10,
                       "hideCard": false,
@@ -2286,7 +2297,7 @@
                           "alias": "supplierUrl",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
-                          "columnType": "text",
+                          "columnType": "url",
                           "textColor": "",
                           "textSize": "0.875rem",
                           "enableFilter": true,
@@ -2301,7 +2312,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"supplierUrl\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "displayText": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"supplierUrl\"]))}}"
                         },
                         "email": {
                           "allowCellWrapping": false,
@@ -2312,7 +2324,7 @@
                           "alias": "email",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
-                          "columnType": "text",
+                          "columnType": "url",
                           "textColor": "",
                           "textSize": "0.875rem",
                           "enableFilter": true,
@@ -2326,8 +2338,9 @@
                           "label": "email",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"email\"]))}}",
-                          "cellBackground": ""
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( \"mailto:\"+currentRow[\"email\"]))}}",
+                          "cellBackground": "",
+                          "displayText": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"email\"]))}}"
                         },
                         "warrantyEmail": {
                           "allowCellWrapping": false,

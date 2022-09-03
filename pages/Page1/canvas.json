@@ -1196,7 +1196,7 @@
                   "children": [
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "isVisibleDownload": true,
+                      "isVisibleDownload": false,
                       "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
                       "topRow": 47,
                       "isSortable": true,
@@ -1278,13 +1278,28 @@
                         },
                         {
                           "key": "primaryColumns.email.displayText"
+                        },
+                        {
+                          "key": "primaryColumns.warrantyEmail.displayText"
+                        },
+                        {
+                          "key": "primaryColumns.accountsEmail.displayText"
+                        },
+                        {
+                          "key": "primaryColumns.repEmail.displayText"
+                        },
+                        {
+                          "key": "primaryColumns.repPhone.displayText"
+                        },
+                        {
+                          "key": "primaryColumns.mainPhone.displayText"
                         }
                       ],
                       "leftColumn": 1,
                       "delimiter": ",",
                       "defaultSelectedRowIndex": 0,
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisibleFilters": true,
+                      "isVisibleFilters": false,
                       "isVisible": true,
                       "enableClientSideSearch": true,
                       "version": 1,
@@ -1314,6 +1329,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "primaryColumnId": "supplierName",
                       "defaultSelectedRowIndices": [
                         0
                       ],
@@ -1337,9 +1353,9 @@
                         "task": 245,
                         "step": 62,
                         "status": 75,
-                        "supplierUrl": 205,
-                        "email": 185,
-                        "warrantyEmail": 217,
+                        "supplierUrl": 241,
+                        "email": 212,
+                        "warrantyEmail": 213,
                         "accountsEmail": 233,
                         "salesRep": 157
                       },
@@ -1397,9 +1413,9 @@
                           "label": "supplierUrl",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( \"https://\"+currentRow[\"supplierUrl\"]))}}",
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"supplierUrl\"]))}}",
                           "cellBackground": "",
-                          "displayText": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"supplierUrl\"]))}}"
+                          "displayText": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( \"http://\"+currentRow[\"supplierUrl\"]))}}"
                         },
                         "email": {
                           "allowCellWrapping": false,
@@ -1426,7 +1442,7 @@
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( \"mailto:\"+currentRow[\"email\"]))}}",
                           "cellBackground": "",
-                          "displayText": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"email\"]))}}"
+                          "displayText": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( \"mailto:\"+currentRow[\"email\"]))}}"
                         },
                         "warrantyEmail": {
                           "allowCellWrapping": false,
@@ -1437,7 +1453,7 @@
                           "alias": "warrantyEmail",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
-                          "columnType": "text",
+                          "columnType": "url",
                           "textColor": "",
                           "textSize": "0.875rem",
                           "enableFilter": true,
@@ -1452,7 +1468,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"warrantyEmail\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "displayText": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( \"mailto:\"+currentRow[\"warrantyEmail\"]))}}"
                         },
                         "accountsEmail": {
                           "allowCellWrapping": false,
@@ -1463,7 +1480,7 @@
                           "alias": "accountsEmail",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
-                          "columnType": "text",
+                          "columnType": "url",
                           "textColor": "",
                           "textSize": "0.875rem",
                           "enableFilter": true,
@@ -1478,7 +1495,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"accountsEmail\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "displayText": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( \"mailto:\"+currentRow[\"accountsEmail\"]))}}"
                         },
                         "salesRep": {
                           "allowCellWrapping": false,
@@ -1515,7 +1533,7 @@
                           "alias": "repEmail",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
-                          "columnType": "text",
+                          "columnType": "url",
                           "textColor": "",
                           "textSize": "0.875rem",
                           "enableFilter": true,
@@ -1530,7 +1548,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"repEmail\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "displayText": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( \"mailto:\"+currentRow[\"repEmail\"]))}}"
                         },
                         "repPhone": {
                           "allowCellWrapping": false,
@@ -1541,7 +1560,7 @@
                           "alias": "repPhone",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
-                          "columnType": "text",
+                          "columnType": "url",
                           "textColor": "",
                           "textSize": "0.875rem",
                           "enableFilter": true,
@@ -1556,7 +1575,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"repPhone\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "displayText": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( \"tel:\"+currentRow[\"repPhone\"]))}}"
                         },
                         "mainPhone": {
                           "allowCellWrapping": false,
@@ -1567,7 +1587,7 @@
                           "alias": "mainPhone",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
-                          "columnType": "text",
+                          "columnType": "url",
                           "textColor": "",
                           "textSize": "0.875rem",
                           "enableFilter": true,
@@ -1582,7 +1602,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"mainPhone\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "displayText": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( \"tel:\"+currentRow[\"mainPhone\"]))}}"
                         }
                       },
                       "key": "02u3plhpcd",
@@ -1669,7 +1690,7 @@
                       "delimiter": ",",
                       "defaultSelectedRowIndex": 0,
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisibleFilters": true,
+                      "isVisibleFilters": false,
                       "isVisible": true,
                       "enableClientSideSearch": true,
                       "version": 1,

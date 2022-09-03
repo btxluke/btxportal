@@ -551,7 +551,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "Website > PRODUCT HIRE (iBikes)",
+                      "text": "Till",
                       "key": "zabk4wabds",
                       "isDeprecated": false,
                       "rightColumn": 22,
@@ -1169,6 +1169,84 @@
                   "renderMode": "CANVAS",
                   "isLoading": false,
                   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                },
+                {
+                  "tabId": "tab4qbtrimcrk",
+                  "boxShadow": "none",
+                  "widgetName": "Canvas5",
+                  "displayName": "Canvas",
+                  "topRow": 1,
+                  "bottomRow": 730,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "hideCard": true,
+                  "minHeight": 710,
+                  "parentColumnSpace": 1,
+                  "dynamicTriggerPathList": [],
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [
+                    {
+                      "key": "borderRadius"
+                    },
+                    {
+                      "key": "accentColor"
+                    }
+                  ],
+                  "children": [],
+                  "key": "oq17gk1psg",
+                  "isDeprecated": false,
+                  "tabName": "Suppliers",
+                  "rightColumn": 1284,
+                  "detachFromLayout": true,
+                  "widgetId": "jeueo2i8rr",
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "containerStyle": "none",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "z8muw9auzw",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                },
+                {
+                  "tabId": "tabvtxqyvpwe2",
+                  "boxShadow": "none",
+                  "widgetName": "Canvas6",
+                  "displayName": "Canvas",
+                  "topRow": 1,
+                  "bottomRow": 711,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "hideCard": true,
+                  "minHeight": 710,
+                  "parentColumnSpace": 1,
+                  "dynamicTriggerPathList": [],
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [
+                    {
+                      "key": "borderRadius"
+                    },
+                    {
+                      "key": "accentColor"
+                    }
+                  ],
+                  "children": [],
+                  "key": "oq17gk1psg",
+                  "isDeprecated": false,
+                  "tabName": "Reference Material",
+                  "rightColumn": 1284,
+                  "detachFromLayout": true,
+                  "widgetId": "0awv019xcr",
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "containerStyle": "none",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "z8muw9auzw",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
                 }
               ],
               "key": "lpc4daq3wo",
@@ -1210,6 +1288,20 @@
                   "widgetId": "4ev8iwkxn2",
                   "isVisible": true,
                   "isDuplicateLabel": false
+                },
+                "tab4qbtrimcrk": {
+                  "id": "tab4qbtrimcrk",
+                  "index": 4,
+                  "label": "Suppliers",
+                  "widgetId": "jeueo2i8rr",
+                  "isVisible": true
+                },
+                "tabvtxqyvpwe2": {
+                  "id": "tabvtxqyvpwe2",
+                  "index": 5,
+                  "label": "Reference Material",
+                  "widgetId": "0awv019xcr",
+                  "isVisible": true
                 }
               },
               "isVisible": true,

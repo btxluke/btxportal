@@ -1203,7 +1203,7 @@
                           "maxZoomLevel": 1,
                           "enableRotation": false,
                           "enableDownload": false,
-                          "objectFit": "cover",
+                          "objectFit": "{{List1.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  'contain';\n              })();\n            })}}",
                           "image": "{{List1.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  currentItem.brandImage;\n              })();\n            })}}",
                           "widgetName": "Image2",
                           "version": 1,
@@ -1544,6 +1544,9 @@
                         },
                         {
                           "key": "template.Text6.text"
+                        },
+                        {
+                          "key": "template.Image2.objectFit"
                         }
                       ],
                       "gridType": "vertical",
@@ -1652,7 +1655,7 @@
                                       "image": "{{currentItem.brandImage}}",
                                       "isDeprecated": false,
                                       "rightColumn": 16,
-                                      "objectFit": "cover",
+                                      "objectFit": "contain",
                                       "widgetId": "ezion5zkol",
                                       "logBlackList": {
                                         "isVisible": true,
@@ -2311,7 +2314,7 @@
                           "label": "supplierUrl",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"supplierUrl\"]))}}",
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( \"https://\"+currentRow[\"supplierUrl\"]))}}",
                           "cellBackground": "",
                           "displayText": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"supplierUrl\"]))}}"
                         },

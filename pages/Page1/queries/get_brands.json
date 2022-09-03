@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
-    "name": "Query1",
+    "name": "get_brands",
     "datasource": {
       "name": "Lukiad",
       "pluginId": "mysql-plugin",
@@ -36,7 +36,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_Query1",
+  "id": "Page1_get_brands",
   "deleted": false,
   "gitSyncId": "631304e891f7e84c98966e8b_631338f591f7e84c98967115"
 }

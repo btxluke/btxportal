@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Page1",
-    "slug": "page1",
+    "name": "Mainpage",
+    "slug": "mainpage",
     "layouts": [
       {
         "viewMode": false,
@@ -2036,36 +2036,25 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Page1_get_brands",
+              "id": "Mainpage_get_brands",
               "name": "get_brands",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
-          ],
-          [
-            {
-              "id": "Page1_get_primarySupplier",
-              "name": "get_primarySupplier",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "Table2.selectedRow.mainSupplier"
-              ],
-              "timeoutInMillisecond": 10000
-            }
           ]
         ],
         "validOnPageLoadActions": true,
-        "id": "Page1",
+        "id": "Mainpage",
         "deleted": false,
         "policies": [],
         "userPermissions": []
       }
     ],
     "userPermissions": [],
-    "policies": []
+    "policies": [],
+    "isHidden": false
   },
   "deleted": false,
   "gitSyncId": "631304e891f7e84c98966e8b_631304e891f7e84c98966e8d"

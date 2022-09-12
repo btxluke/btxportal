@@ -6,7 +6,7 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tswitchPDI: () => {\n\t\tif (jobMechanic.selectedOptionLabel !== null  && signOffMechanic.selectedOptionLabel !== null) {\n\t\t\tbtn_generatePDI.isDisabled = false;\n\t\t}\n\t}\n}\n",
+    "body": "export default {\n\tswitchPDI: () => {\n\t\tif (jobMechanic.selectedOptionLabel !== null  && signOffMechanic.selectedOptionLabel !== null) {\n\t\t\tbtn_generatePDI.isDisabled = false;\n\t\t} else if (jobMechanic.selectedOptionLabel === null  && signOffMechanic.selectedOptionLabel === null) {\n\t\t\tbtn_generatePDI.isDisabled = true;\n\t\t}\n\t}\n}\n",
     "variables": []
   },
   "id": "Mainpage_switchPdiButton",

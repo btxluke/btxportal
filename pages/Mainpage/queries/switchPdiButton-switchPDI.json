@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  if (jobMechanic.selectedOptionLabel !== null && signOffMechanic.selectedOptionLabel !== null) {\n    btn_generatePDI.isDisabled = false;\n  }\n}",
+      "body": "() => {\n  if (jobMechanic.selectedOptionLabel !== null && signOffMechanic.selectedOptionLabel !== null) {\n    btn_generatePDI.isDisabled = false;\n  } else if (jobMechanic.selectedOptionLabel === null && signOffMechanic.selectedOptionLabel === null) {\n    btn_generatePDI.isDisabled = true;\n  }\n}",
       "jsArguments": [],
       "isAsync": false
     },
@@ -33,7 +33,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  if (jobMechanic.selectedOptionLabel !== null && signOffMechanic.selectedOptionLabel !== null) {\n    btn_generatePDI.isDisabled = false;\n  }\n}"
+      "() => {\n  if (jobMechanic.selectedOptionLabel !== null && signOffMechanic.selectedOptionLabel !== null) {\n    btn_generatePDI.isDisabled = false;\n  } else if (jobMechanic.selectedOptionLabel === null && signOffMechanic.selectedOptionLabel === null) {\n    btn_generatePDI.isDisabled = true;\n  }\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

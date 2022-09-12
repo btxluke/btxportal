@@ -934,7 +934,11 @@
                       "defaultOptionValue": "GREEN",
                       "animateLoading": true,
                       "parentColumnSpace": 19.75,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
                       "leftColumn": 1,
                       "dynamicBindingPathList": [
                         {
@@ -964,7 +968,8 @@
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "onOptionChange": "{{switchPdiButton.switchPDI()}}"
                     },
                     {
                       "boxShadow": "none",
@@ -991,7 +996,11 @@
                       "defaultOptionValue": "GREEN",
                       "animateLoading": true,
                       "parentColumnSpace": 19.75,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
                       "leftColumn": 33,
                       "dynamicBindingPathList": [
                         {
@@ -1021,7 +1030,8 @@
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "onOptionChange": "{{switchPdiButton.switchPDI()}}"
                     }
                   ],
                   "isDisabled": false,

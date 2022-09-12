@@ -3,10 +3,6 @@
     {
       "id": "Mainpage",
       "isDefault": true
-    },
-    {
-      "id": "Login",
-      "isDefault": false
     }
   ],
   "viewMode": false,

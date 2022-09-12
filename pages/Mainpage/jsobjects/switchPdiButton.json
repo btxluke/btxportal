@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "switchPdiButton",
+    "pageId": "Mainpage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tswitchPDI: () => {\n\t\tif (jobMechanic.selectedOptionLabel && signOffMechanic.selectedOptionLabel) {\n\t\t\tbtn_generatePDI.isDisabled = false;\n\t\t}\n\t}\n}\n",
+    "variables": []
+  },
+  "id": "Mainpage_switchPdiButton",
+  "deleted": false,
+  "gitSyncId": "631304e891f7e84c98966e8b_631f34a5767411587354dae1"
+}

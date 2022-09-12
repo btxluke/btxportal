@@ -19,9 +19,9 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  if (get_repair.data !== null && jobMechanic.selectedOptionLabel !== null && signOffMechanic.selectedOptionLabel !== null) {\n    btn_generatePDI.isDisabled = false;\n  } else {\n    btn_generatePDI.isDisabled = true;\n  }\n}",
+      "body": "() => {\n  if (get_repair.data !== null && jobMechanic.selectedOptionLabel !== null && signOffMechanic.selectedOptionLabel !== null) {\n    n8n_PDIContract.run();\n  } else {\n    showAlert(\"please ensure you have selected a repair, a job mechanic and a signoff mechanic\");\n  }\n}",
       "jsArguments": [],
-      "isAsync": false
+      "isAsync": true
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -33,7 +33,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  if (get_repair.data !== null && jobMechanic.selectedOptionLabel !== null && signOffMechanic.selectedOptionLabel !== null) {\n    btn_generatePDI.isDisabled = false;\n  } else {\n    btn_generatePDI.isDisabled = true;\n  }\n}"
+      "() => {\n  if (get_repair.data !== null && jobMechanic.selectedOptionLabel !== null && signOffMechanic.selectedOptionLabel !== null) {\n    n8n_PDIContract.run();\n  } else {\n    showAlert(\"please ensure you have selected a repair, a job mechanic and a signoff mechanic\");\n  }\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

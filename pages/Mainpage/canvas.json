@@ -2458,7 +2458,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 30000
             },
             {
               "id": "Mainpage_get_SignOffMechanics",
@@ -2466,7 +2466,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 30000
             },
             {
               "id": "Mainpage_get_brands",

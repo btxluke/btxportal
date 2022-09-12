@@ -863,7 +863,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "btn_generatePDI",
-                      "onClick": "{{n8n_PDIContract}}",
+                      "onClick": "{{switchPdiButton.switchPDI()}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "dynamicPropertyPathList": [
                         {

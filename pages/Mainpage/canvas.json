@@ -864,9 +864,6 @@
                       "dynamicPropertyPathList": [
                         {
                           "key": "onClick"
-                        },
-                        {
-                          "key": "isDisabled"
                         }
                       ],
                       "displayName": "Button",
@@ -897,7 +894,7 @@
                         }
                       ],
                       "text": "Generate PDI",
-                      "isDisabled": "if ()",
+                      "isDisabled": true,
                       "key": "0iwoeqq3yh",
                       "isDeprecated": false,
                       "rightColumn": 63,

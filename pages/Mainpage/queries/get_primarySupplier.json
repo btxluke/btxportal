@@ -15,13 +15,13 @@
     },
     "pageId": "Mainpage",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 30000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "SELECT * FROM supplierData WHERE supplierName = \"{{Table2.selectedRow.mainSupplier}}\" OR supplierName = \"{{Table2.selectedRow.secondarySupplier}}\" ",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ]
     },

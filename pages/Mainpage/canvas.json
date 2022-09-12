@@ -843,7 +843,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "Repair Loaded: {{get_repair.data[0].Product_Description}}. Completed by {{jobMechanic.selectedOptionValue}} / Signed off by {{signOffMechanic.selectedOptionValue}}",
+                      "text": "{{get_repair.data ? \"Repair Loaded: \"+}}",
                       "key": "xdc8j4ooav",
                       "isDeprecated": false,
                       "rightColumn": 49,
@@ -2474,7 +2474,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 30000
             }
           ]
         ],

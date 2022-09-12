@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  if (get_repair.data !== null && jobMechanic.selectedOptionLabel !== null && signOffMechanic.selectedOptionLabel !== null) {\n    n8n_PDIContract.run();\n  } else {\n    showAlert(\"please ensure you have selected a repair, a job mechanic and a signoff mechanic\");\n  }\n}",
+      "body": "() => {\n  if (get_repair.data && jobMechanic.selectedOptionLabel && signOffMechanic.selectedOptionLabel) {\n    n8n_PDIContract.run();\n  } else {\n    showAlert(\"please ensure you have selected a repair, a job mechanic and a signoff mechanic\");\n  }\n}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -33,7 +33,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  if (get_repair.data !== null && jobMechanic.selectedOptionLabel !== null && signOffMechanic.selectedOptionLabel !== null) {\n    n8n_PDIContract.run();\n  } else {\n    showAlert(\"please ensure you have selected a repair, a job mechanic and a signoff mechanic\");\n  }\n}"
+      "() => {\n  if (get_repair.data && jobMechanic.selectedOptionLabel && signOffMechanic.selectedOptionLabel) {\n    n8n_PDIContract.run();\n  } else {\n    showAlert(\"please ensure you have selected a repair, a job mechanic and a signoff mechanic\");\n  }\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

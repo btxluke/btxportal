@@ -936,7 +936,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "{{get_repair.data ? \"Repair Loaded: \"+}}",
+                      "text": "{{get_repair.data ? \"Repair Loaded: \" + get_repair.data[0].Product_Description : \"No Repair Loaded\" }}",
                       "key": "xdc8j4ooav",
                       "isDeprecated": false,
                       "rightColumn": 49,

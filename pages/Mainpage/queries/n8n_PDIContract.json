@@ -18,7 +18,12 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "path": "/webhook/pdiContract",
-      "headers": [],
+      "headers": [
+        {
+          "key": "content-type",
+          "value": "application/json"
+        }
+      ],
       "encodeParamsToggle": true,
       "queryParameters": [],
       "body": "{\n\"method\" : \"generatePDI\",\n\"details\" : {\n\t\"Repair_Number\" : {{Input1.text}},\n\t\"Mechanic_FirstName\" : {{jobMechanic.selectedOptionValue.split(\" \")[0]}},\n\t\"Mechanic_LastName\" : {{jobMechanic.selectedOptionValue.split(\" \")[1]}},\n\t\"SignOff_Name\" : {{signOffMechanic.selectedOptionValue}}\n}\n}",
